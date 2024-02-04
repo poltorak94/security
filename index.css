@@ -1,0 +1,402 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background: #0c0c0c;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container{
+    max-width: 1266px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+
+.header__tel{
+    font-size: 18px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    transition: 200ms ease all;
+}
+
+.header__tel:hover{
+    border-color: transparent;
+}
+
+.header__tel::before{
+    content: url('./img/tel.png');
+    position: absolute;
+    left: -60px;
+    top: -8px;
+}
+
+.banner{
+    background: url('./img/banner.jpg') no-repeat;
+    background-size: cover;
+    padding: 130px 50px;
+    margin-bottom: 80px;
+}
+
+.banner__title{
+    font-weight: 800;
+    font-size: 46px;
+    margin-bottom: 50px;
+}
+
+.banner__link{
+    background: #005aff;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 20px 45px;
+    border-radius: 12px;
+    transition: 200ms ease all;
+    box-shadow:0 0 10px #005aff;
+}
+
+.banner__link:hover{
+    background: #003aa7;
+    box-shadow: 0 0 10px #003aa7;
+}
+
+.contacts__title{
+    margin-bottom: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.contacts__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.contacts__item-icon{
+   margin-right: 20px;
+}
+
+.contacts__item-icon--first{
+    margin-right: 30px;
+}
+
+.contacts__item--link .contacts__item-value{
+    transform: 200ms ease all;
+    border-bottom: 1px solid #fff;
+}
+
+.contacts__item--link .contacts__item-value:hover{
+    border-color: transparent;
+}
+
+.contacts__items{
+    margin-bottom: 40px;
+}
+
+.contacts__map{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 90px;
+}
+
+.services{
+    margin-bottom: 150px;
+}
+
+.services__title{
+    margin-bottom: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.services__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__container img{
+    max-width: 306px;
+}
+
+.services__container ul {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.services__list{
+    padding-right: 65px;
+}
+
+.license__title{
+    margin-bottom: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.license__container{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 100px;
+}
+
+.license__container img{
+    max-width: 320px;
+    width: 100%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.license__text{
+    font-size: 18px;
+    max-width: 740px;
+}
+
+.license__text p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.main{
+    position: relative;
+    z-index: 2;
+}
+
+.bg-1{
+    position: absolute;
+    top: 9%;
+    right: -8%;
+}
+
+.bg-2{
+    position: absolute;
+    bottom: 1%;
+    left: -15%;
+}
+
+.modal{
+    background: #fff;
+    max-width: 800px;
+    min-width: 800px;
+    border-radius: 15px;
+    color: #000;
+    padding: 40px 80px;
+    position: relative;
+}
+
+.modal__title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.modal__inputs{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto 35px;
+}
+
+.input__title{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.input__field{
+    margin-bottom: 20px;
+    font-size: 16px;
+    background: #fcfcfc;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    text-align: center;
+}
+
+.input-submit{
+    background: #005aff;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px 45px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.input-submit:hover{
+    background: #003aa7;
+}
+
+.modal__note{
+    font-size: 12px;
+    color: #7b7b7b;
+    text-align: center;
+}
+
+.modal__note a{
+    text-decoration: underline;
+}
+
+.modal__close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.modal--hidden{
+    display: none;
+}
+
+.modal-success{
+    text-align: center;
+    padding-top: 55px;
+    font-size: 16px;
+    display: none;
+}
+
+.modal-success img{
+    margin-bottom: 30px;
+}
+
+.modal-success .modal__title{
+    margin-bottom: 30px;
+}
+
+.modal-from--success .modal__content{
+    display: none;
+}
+
+.modal-from--success .modal-success{
+    display: block;
+}
+
+.empty{
+    flex: 1;
+}
+
+.img-holder{
+    flex: 1;
+    text-align: center;
+}
+
+.tel-holder{
+    flex: 1;
+    text-align: right;
+}
+
+@media (max-width: 1919px){
+    .bg-1{
+        right: 0;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1365px){
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bg-2, .bg-1{
+        display: none;
+    }
+}
+
+@media (max-width: 989px){
+    .header__top{
+        flex-direction: column;
+    }
+
+    .img-holder{
+        margin-bottom: 30px;
+    }
+
+    .tel-holder{
+        padding-left: 25px;
+    }
+
+    .services__container{
+        flex-direction: column;
+    }
+
+    .services__title, .contacts__title, .license__title, .services{
+        margin-bottom: 50px;
+    }
+
+    .modal{
+        max-width: 600px;
+        min-width: 600px;
+    }
+}
+
+
+@media (max-width: 767px){
+    .license__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .license__container img{
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .banner__title{
+        font-size: 35px;
+    }
+
+    .banner__title br{
+        display: none;
+    }
+
+    .banner__link{
+        font-size: 15px;
+    }
+
+    .services__title, .contacts__title, .license__title, .services{
+        font-size: 30px;
+    }
+
+    .services__list{
+        padding-right: 0;
+    }
+
+    .modal {
+        max-width: 100%;
+        min-width: 100%;
+        padding: 55px 20px 20px;
+    }
+
+    .arcticmodal-container_i2{
+        padding: 0;
+    }
+
+    .modal__title{
+        font-size: 24px;
+    }
+
+    .input-submit{
+        font-size: 20px;
+    }
+}
